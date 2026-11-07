@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cbve827hj0icv"]
+
+[ext_resource type="PackedScene" uid="uid://bv67kfwnxktcg" path="res://party_map/PartyBase.tscn" id="1_r5a2p"]
+[ext_resource type="PackedScene" uid="uid://df0t7skrgbh3v" path="res://player/Player.tscn" id="1_w3au8"]
+[ext_resource type="PackedScene" uid="uid://dwh5x2dcwfe0y" path="res://objects/level_transition.tscn" id="3_tuuue"]
+
+[node name="TrentLevel" type="Node2D" unique_id=795176081]
+
+[node name="PartyBase" parent="." unique_id=113592755 instance=ExtResource("1_r5a2p")]
+
+[node name="Player" parent="." unique_id=1359522910 instance=ExtResource("1_w3au8")]
+
+[node name="LevelTransition" parent="." unique_id=1525343264 instance=ExtResource("3_tuuue")]
+position = Vector2(863, 387)

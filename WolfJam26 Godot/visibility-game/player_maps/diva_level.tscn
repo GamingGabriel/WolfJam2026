@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://g1r7u7h582xk"]
+
+[ext_resource type="PackedScene" uid="uid://df0t7skrgbh3v" path="res://player/Player.tscn" id="1_76r7q"]
+[ext_resource type="PackedScene" uid="uid://bv67kfwnxktcg" path="res://party_map/PartyBase.tscn" id="1_s5sak"]
+[ext_resource type="PackedScene" uid="uid://dwh5x2dcwfe0y" path="res://objects/level_transition.tscn" id="3_ha5qw"]
+
+[node name="DivaLevel" type="Node2D" unique_id=605837312]
+
+[node name="PartyBase" parent="." unique_id=113592755 instance=ExtResource("1_s5sak")]
+
+[node name="Player" parent="." unique_id=1359522910 instance=ExtResource("1_76r7q")]
+
+[node name="LevelTransition" parent="." unique_id=1525343264 instance=ExtResource("3_ha5qw")]
+position = Vector2(17, -238)
