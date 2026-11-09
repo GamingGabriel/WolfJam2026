@@ -1,0 +1,61 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dt5ffbhhku51o"]
+
+[ext_resource type="Texture2D" uid="uid://cicfp23kpn3ke" path="res://drive-download-20261107T205840Z-1-001/quinn_stand_b.png" id="1_vyjqx"]
+[ext_resource type="Texture2D" uid="uid://yi1nmieday2u" path="res://drive-download-20261107T205840Z-1-001/quinn_stand_f.png" id="2_a3ka4"]
+[ext_resource type="Texture2D" uid="uid://c2wocjj1bqa7q" path="res://drive-download-20261107T205840Z-1-001/quinn_walk_fl.png" id="3_xhgu1"]
+[ext_resource type="Texture2D" uid="uid://dnao3q8idan1k" path="res://drive-download-20261107T205840Z-1-001/quinn_walk_fr.png" id="4_57oiv"]
+[ext_resource type="Texture2D" uid="uid://mwwgpgasmbu2" path="res://drive-download-20261107T205840Z-1-001/quinn_walk_br.png" id="5_63x0e"]
+[ext_resource type="Texture2D" uid="uid://c7l7vhqsdvr1p" path="res://drive-download-20261107T205840Z-1-001/quinn_walk_bl.png" id="6_eq2dx"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a3ka4")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vyjqx")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a3ka4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xhgu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a3ka4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_57oiv")
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vyjqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_63x0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_vyjqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_eq2dx")
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 7.0
+}]

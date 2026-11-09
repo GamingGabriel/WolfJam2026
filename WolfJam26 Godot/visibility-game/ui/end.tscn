@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://hfrw6jpd7amx"]
+
+[node name="End" type="Control" unique_id=517864626]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1802658866]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=157728010]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

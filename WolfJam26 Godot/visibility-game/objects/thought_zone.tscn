@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cgdn7fhmjutpv"]
+
+[ext_resource type="Script" uid="uid://cap6eqqmmftw3" path="res://objects/thought_zone.gd" id="1_4xt0m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ud3q"]
+size = Vector2(30, 20)
+
+[node name="ThoughtZone" type="Area2D" unique_id=881346536]
+script = ExtResource("1_4xt0m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=665323138]
+shape = SubResource("RectangleShape2D_2ud3q")

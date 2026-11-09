@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d11ftwx5n4o8d"
+path="res://.godot/imported/Disorient (Allison).wav-46a1649c24a2a04b41100e7e60cc2bd8.sample"
+
+[deps]
+
+source_file="res://music/Disorient (Allison).wav"
+dest_files=["res://.godot/imported/Disorient (Allison).wav-46a1649c24a2a04b41100e7e60cc2bd8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

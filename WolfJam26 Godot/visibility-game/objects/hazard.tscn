@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://rbfya1il5lmd"]
+
+[ext_resource type="Script" uid="uid://02giro5iwq5d" path="res://objects/hazard.gd" id="1_mi5il"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aoid5"]
+
+[node name="Hazard" type="Area2D" unique_id=2018054745]
+script = ExtResource("1_mi5il")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1786867679]
+shape = SubResource("RectangleShape2D_aoid5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1950471198]
+offset_right = 40.0
+offset_bottom = 40.0

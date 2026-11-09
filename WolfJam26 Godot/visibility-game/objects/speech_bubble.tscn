@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cqgsfhicu8olx"]
+
+[ext_resource type="Script" uid="uid://igu7okwl6i6r" path="res://objects/speech_bubble.gd" id="1_6bqfx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2ud3q"]
+
+[node name="SpeechBubble" type="Node2D" unique_id=257924644]
+z_index = 10
+script = ExtResource("1_6bqfx")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=799716958]
+offset_left = -18.0
+offset_top = -56.0
+offset_right = 22.0
+offset_bottom = -16.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1677145220]
+custom_minimum_size = Vector2(130, 40)
+layout_mode = 2
+offset_transform_enabled = true
+label_settings = SubResource("LabelSettings_2ud3q")
+horizontal_alignment = 1
+autowrap_mode = 2

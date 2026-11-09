@@ -2,13 +2,44 @@
 
 [ext_resource type="PackedScene" uid="uid://df0t7skrgbh3v" path="res://player/Player.tscn" id="1_76r7q"]
 [ext_resource type="PackedScene" uid="uid://bv67kfwnxktcg" path="res://party_map/PartyBase.tscn" id="1_s5sak"]
+[ext_resource type="SpriteFrames" uid="uid://dt5ffbhhku51o" path="res://characters/QUINN.tres" id="3_4dl3q"]
 [ext_resource type="PackedScene" uid="uid://dwh5x2dcwfe0y" path="res://objects/level_transition.tscn" id="3_ha5qw"]
+[ext_resource type="Texture2D" uid="uid://dardtqwnyjv8o" path="res://drive-download-20261107T205840Z-1-001/quinn_annoyed_open.png" id="4_4dl3q"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4dl3q"]
+font_size = 17
+outline_color = Color(0.27973178, 0.1403737, 4.813075e-07, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.37254903)
 
 [node name="DivaLevel" type="Node2D" unique_id=605837312]
 
 [node name="PartyBase" parent="." unique_id=113592755 instance=ExtResource("1_s5sak")]
 
 [node name="Player" parent="." unique_id=1359522910 instance=ExtResource("1_76r7q")]
+position = Vector2(707, -226)
+frames = ExtResource("3_4dl3q")
+
+[node name="TextureRect" type="TextureRect" parent="Player" unique_id=1632814467]
+offset_left = 34.0
+offset_top = -127.0
+offset_right = 74.0
+offset_bottom = -87.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(3, 3)
+texture = ExtResource("4_4dl3q")
+expand_mode = 1
+
+[node name="TextEdit" type="Label" parent="Player" unique_id=1265609803]
+custom_minimum_size = Vector2(50, 0)
+offset_left = 65.0
+offset_top = -75.0
+offset_right = 155.0
+offset_bottom = -51.0
+text = "Quinn
+"
+label_settings = SubResource("LabelSettings_4dl3q")
+vertical_alignment = 1
 
 [node name="LevelTransition" parent="." unique_id=1525343264 instance=ExtResource("3_ha5qw")]
 position = Vector2(17, -238)

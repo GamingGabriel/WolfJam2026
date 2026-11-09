@@ -1,20 +1,31 @@
 [gd_scene format=3 uid="uid://df0t7skrgbh3v"]
 
 [ext_resource type="Script" uid="uid://cs5d6ppyyfw2" path="res://player/player.gd" id="1_3c3w1"]
-[ext_resource type="Texture2D" uid="uid://dwty827xtssj1" path="res://icon.svg" id="1_ulp21"]
+[ext_resource type="SpriteFrames" uid="uid://dnh14fi23tk14" path="res://characters/JESSICA.tres" id="2_wnvi2"]
+[ext_resource type="PackedScene" uid="uid://cqgsfhicu8olx" path="res://objects/speech_bubble.tscn" id="3_wnvi2"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_2ud3q"]
-radius = 64.49
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bqfx"]
+size = Vector2(35, 35)
 
 [node name="Player" type="CharacterBody2D" unique_id=1359522910]
-position = Vector2(-845, 0)
 script = ExtResource("1_3c3w1")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1196304241]
-texture = ExtResource("1_ulp21")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=321834011]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1906429149]
+position = Vector2(39.999992, 7.999996)
+scale = Vector2(2.2499998, 1.9)
+sprite_frames = ExtResource("2_wnvi2")
+animation = &"idle_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1119032589]
-position = Vector2(0, -0.99999994)
-shape = SubResource("CircleShape2D_2ud3q")
+visible = false
+position = Vector2(41, 10)
+scale = Vector2(0.99999994, 0.9999999)
+shape = SubResource("RectangleShape2D_6bqfx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=321834011]
+zoom = Vector2(1.5, 1.5)
+
+[node name="SpeechBubble" parent="." unique_id=257924644 instance=ExtResource("3_wnvi2")]
+position = Vector2(44, 7)
+
+[node name="VisionLight" type="PointLight2D" parent="." unique_id=279366243]

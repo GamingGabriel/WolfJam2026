@@ -2,13 +2,41 @@
 
 [ext_resource type="PackedScene" uid="uid://df0t7skrgbh3v" path="res://player/Player.tscn" id="1_hkdnh"]
 [ext_resource type="PackedScene" uid="uid://bv67kfwnxktcg" path="res://party_map/PartyBase.tscn" id="1_ni44l"]
+[ext_resource type="SpriteFrames" uid="uid://hqfuqnbdjlv4" path="res://characters/ALLISON.tres" id="3_wqohn"]
 [ext_resource type="PackedScene" uid="uid://dwh5x2dcwfe0y" path="res://objects/level_transition.tscn" id="3_ymgms"]
+[ext_resource type="Texture2D" uid="uid://dxbmlqfvk8epe" path="res://allison_shock_open.png" id="4_wqohn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wqohn"]
+font_size = 17
+outline_color = Color(0.27973178, 0.1403737, 4.813075e-07, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.37254903)
 
 [node name="AnxiousLevel" type="Node2D" unique_id=795176081]
 
 [node name="PartyBase" parent="." unique_id=113592755 instance=ExtResource("1_ni44l")]
 
 [node name="Player" parent="." unique_id=1359522910 instance=ExtResource("1_hkdnh")]
+frames = ExtResource("3_wqohn")
+
+[node name="TextureRect" type="TextureRect" parent="Player" unique_id=911331514]
+offset_left = -5.0
+offset_top = -158.0
+offset_right = 35.0
+offset_bottom = -118.0
+scale = Vector2(2.74, 2.74)
+texture = ExtResource("4_wqohn")
+expand_mode = 1
+
+[node name="TextEdit" type="Label" parent="Player" unique_id=54581083]
+custom_minimum_size = Vector2(50, 0)
+offset_left = 65.0
+offset_top = -75.0
+offset_right = 155.0
+offset_bottom = -51.0
+text = "Allison"
+label_settings = SubResource("LabelSettings_wqohn")
+vertical_alignment = 1
 
 [node name="LevelTransition" parent="." unique_id=1525343264 instance=ExtResource("3_ymgms")]
 position = Vector2(6, 224)

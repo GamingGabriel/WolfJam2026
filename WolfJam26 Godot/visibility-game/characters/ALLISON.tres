@@ -1,0 +1,61 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://hqfuqnbdjlv4"]
+
+[ext_resource type="Texture2D" uid="uid://c82wtvm1i2xgg" path="res://drive-download-20261107T205840Z-1-001/allison_stand_f.png" id="1_624y1"]
+[ext_resource type="Texture2D" uid="uid://c63elcgs0iq03" path="res://drive-download-20261107T205840Z-1-001/allison_stand_b.png" id="2_244s8"]
+[ext_resource type="Texture2D" uid="uid://227dp1dv5utn" path="res://drive-download-20261107T205840Z-1-001/allison_walk_fl.png" id="3_m5hat"]
+[ext_resource type="Texture2D" uid="uid://ba6ha4nw62b0e" path="res://drive-download-20261107T205840Z-1-001/allison_walk_fr.png" id="4_gsx6v"]
+[ext_resource type="Texture2D" uid="uid://cb8hk4f4iqkls" path="res://drive-download-20261107T205840Z-1-001/allison_walk_br.png" id="5_b8ewq"]
+[ext_resource type="Texture2D" uid="uid://l271hot828kn" path="res://drive-download-20261107T205840Z-1-001/allison_walk_bl.png" id="6_xrw0m"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_624y1")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_244s8")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_624y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m5hat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_624y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gsx6v")
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_244s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b8ewq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_244s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xrw0m")
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 7.0
+}]

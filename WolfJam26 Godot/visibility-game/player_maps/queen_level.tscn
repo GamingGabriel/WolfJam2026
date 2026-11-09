@@ -2,7 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://bv67kfwnxktcg" path="res://party_map/PartyBase.tscn" id="1_2dbs3"]
 [ext_resource type="PackedScene" uid="uid://df0t7skrgbh3v" path="res://player/Player.tscn" id="1_pmbox"]
+[ext_resource type="SpriteFrames" uid="uid://dnh14fi23tk14" path="res://characters/JESSICA.tres" id="3_agc73"]
 [ext_resource type="PackedScene" uid="uid://dwh5x2dcwfe0y" path="res://objects/level_transition.tscn" id="3_sngta"]
+[ext_resource type="PackedScene" uid="uid://8k730fnbbh5j" path="res://objects/Interactions.tscn" id="4_3hnae"]
+[ext_resource type="Texture2D" uid="uid://bcm501rb52jhn" path="res://jessica_talk_close.png" id="4_agc73"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_agc73"]
+font_size = 17
+outline_color = Color(0.27973178, 0.1403737, 4.813075e-07, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.37254903)
 
 [node name="QueenLevel" type="Node2D" unique_id=795176081]
 
@@ -10,6 +19,35 @@
 position = Vector2(5, 0)
 
 [node name="Player" parent="." unique_id=1359522910 instance=ExtResource("1_pmbox")]
+position = Vector2(-74, -766)
+frames = ExtResource("3_agc73")
+
+[node name="TextureRect" type="TextureRect" parent="Player" unique_id=1799477735]
+offset_left = -18.0
+offset_top = -201.0
+offset_right = 22.0
+offset_bottom = -161.0
+scale = Vector2(0.75, 0.75)
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.65, 0.65)
+texture = ExtResource("4_agc73")
+expand_mode = 1
+stretch_mode = 2
+
+[node name="TextEdit" type="Label" parent="Player" unique_id=1440288179]
+custom_minimum_size = Vector2(50, 0)
+offset_left = 65.0
+offset_top = -75.0
+offset_right = 155.0
+offset_bottom = -51.0
+text = "Jessica"
+label_settings = SubResource("LabelSettings_agc73")
+vertical_alignment = 1
 
 [node name="LevelTransition" parent="." unique_id=1525343264 instance=ExtResource("3_sngta")]
-position = Vector2(-456, -7)
+position = Vector2(582, 981)
+scale = Vector2(8.84, 1)
+
+[node name="Interactions" parent="." unique_id=1686451335 instance=ExtResource("4_3hnae")]
+position = Vector2(-115, -64)
+lines = Array[String](["uh hi", "you new?", "right...", "so what did you need again?", "youre kinda sad"])

@@ -1,0 +1,61 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dnh14fi23tk14"]
+
+[ext_resource type="Texture2D" uid="uid://c13ggm3j4b32c" path="res://drive-download-20261107T205840Z-1-001/jessica_stand_f.png" id="1_yy6sy"]
+[ext_resource type="Texture2D" uid="uid://crliddj4qlk8u" path="res://drive-download-20261107T205840Z-1-001/jessica_stand_b.png" id="2_eqiqv"]
+[ext_resource type="Texture2D" uid="uid://d3060qw5knk0g" path="res://drive-download-20261107T205840Z-1-001/jessica_walk_fl.png" id="3_5umnt"]
+[ext_resource type="Texture2D" uid="uid://b6r2w5324n6bg" path="res://drive-download-20261107T205840Z-1-001/jessica_walk_fr.png" id="4_gmp2y"]
+[ext_resource type="Texture2D" uid="uid://dx7oi3wj8fddq" path="res://drive-download-20261107T205840Z-1-001/jessica_walk_bl.png" id="5_df8bc"]
+[ext_resource type="Texture2D" uid="uid://bjvqewd43sm4u" path="res://drive-download-20261107T205840Z-1-001/jessica_walk_br.png" id="6_kj1bh"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yy6sy")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eqiqv")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yy6sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5umnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_yy6sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gmp2y")
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eqiqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_df8bc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eqiqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kj1bh")
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 7.0
+}]
